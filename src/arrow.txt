@@ -5,9 +5,6 @@ import App from './App';
 import Mymessage from './Mymessage';
 import Feed from './Feed';
 import Team from './Team';
-import Advert from './Advert';
-import Contactform from './Contactform';
-import Restaurant from './Restaurant';
 // if export default us not used => import {Mymessage}from './Mymessage';
 import reportWebVitals from './reportWebVitals';
 
@@ -29,20 +26,13 @@ ReactDOM.render(
   <Mymessage scores= {student_scores} age='29' />,document.getElementById('first')
 );
 ReactDOM.render(
-  <Advert />,document.getElementById('first')
-);
-// ReactDOM.render(
-//   <Team />,document.getElementById('root')
-//);
-
-// ReactDOM.render(
-//   <Feed/>,document.getElementById('update')
-// );
-ReactDOM.render(
-  <Restaurant />,document.getElementById('update')
+  <Feed user='Adedayo'/>,document.getElementById('first')
 );
 ReactDOM.render(
-  <Contactform />,document.getElementById('contact')
+  <Team />,document.getElementById('root')
+);
+ReactDOM.render(
+  feed,document.getElementById('update')
 );
 // ReactDOM.render(
 //   advert,document.getElementById('feeds')
@@ -55,3 +45,38 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function Mymessage(){
+    return(
+      <table className='table table-striped'>
+        <tr>
+          <td>My content here</td>
+          </tr>
+        <tr>
+          <td>another content here</td>
+          </tr>
+      </table>
+    );
+}
+export default Mymessage;
